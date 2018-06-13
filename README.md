@@ -8,6 +8,12 @@ The purpose of this solution is to investigate using newer technologies such as:
 
 See the stackoverflow question https://stackoverflow.com/questions/50669108/c11-threads-to-update-mfc-application-windows-sendmessage-postmessage-re
 
+#Background Materials
+
+##Videos
+
+CppCon 2017: Scott Jones & Kenny Kerr “C++/WinRT and the Future of C++ on Windows” https://www.youtube.com/watch?v=7TdpWB_vRZM
+
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 1.	Installation process

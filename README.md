@@ -21,6 +21,7 @@ It seems that there are a couple of different technologies which can be mixed to
  - C++11/17/20 standards and Technical Specification for coroutines
  - Microsoft Visual Studio concurrency functionality and PPL in the header pplawait.h
  - Microsoft C++/WinRT, a C++ Language Projection of Windows Runtime or WinRT
+ - Microsoft Foundation Classes framework technology 
 
 ## Videos
 
@@ -30,7 +31,7 @@ CppCon 2017: Scott Jones & Kenny Kerr “C++/WinRT and the Future of C++ on Window
 
 This repository is a simple Microsoft Foundaton Classes (MFC) application to experiment with mixing in non-MFC technologies.
 
-The initial application source code was created using the New Project menu item of Visual Studio 2017 Community Edition and
+The initial application source code was created using the File -> New -> Project menu item of Visual Studio 2017 Community Edition and
 choosing the Visual Studio style them. This theme provides the various dockable panes and windows that are part of the
 Visual Studio IDE for at least a decade or two (Visual Studio 2005 had this technology).
 
@@ -59,6 +60,18 @@ the original MFC was designed to work with those MFC specific versions of the C+
 
 However these days the C++11/17 Standard Library is superior to the MFC classes which duplicate collections and from
 what I have read, the C++ Standard Library should be used for collections, strings, etc.
+
+MFC was intended to be an object oriented framework to wrap around the Win32 API and to extend it in order to make
+the development of desktop application easier while also providing a standard look and feel. However there are a
+number of places where object oriented design and programming were broken in order to provide some functionality.
+
+MFC has as its core architecture the MVC design pattern. There are three basic templates: dialog based application,
+single document application, and multiple document application. For the later two there are a number of classes
+which help with a document/view architecture in which a data source, a document, has one or more views which
+provide a display of the data for a particular view or perspective. An example of multiple views would be a
+view that displays a document in a grid of rows and columns with another view showing the same document as
+a series of graphs or maps. As the document is updated, the document class informs the views that have registered
+with the document class that the data has changed, implementing an Observer desgin Pattern.
 
 ### A Note on MFC strings
 

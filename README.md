@@ -10,6 +10,18 @@ See the stackoverflow question https://stackoverflow.com/questions/50669108/c11-
 
 # Background Materials
 
+There are a number of documents, text and video, containing materials on the subjects of MFC, Windows messages, C++11/17/20, and C++/WinRT.
+
+Unfortunately the quality of the materials vary and quite a few seem to be a bit sparse on important details.
+
+Following is a collection of materials from Microsoft, CppCon proceedings, and various bloggers which can provide quite a bit of the
+necessary background to being able to understand threading in C++ and Windows and MFC and C++/WinRT.
+
+It seems that there are a couple of different technologies which can be mixed together:
+ - C++11/17/20 standards and Technical Specification for coroutines
+ - Microsoft Visual Studio concurrency functionality and PPL in the header pplawait.h
+ - Microsoft C++/WinRT, a C++ Language Projection of Windows Runtime or WinRT
+
 ## Videos
 
 CppCon 2017: Scott Jones & Kenny Kerr “C++/WinRT and the Future of C++ on Windows” https://www.youtube.com/watch?v=7TdpWB_vRZM

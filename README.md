@@ -8,6 +8,8 @@ The purpose of this solution is to investigate using newer technologies such as:
 
 See the stackoverflow question https://stackoverflow.com/questions/50669108/c11-threads-to-update-mfc-application-windows-sendmessage-postmessage-re
 
+See this Microsoft Channel 9 video Effective C++/WinRT for UWP and Win32 https://channel9.msdn.com/events/Build/2018/BRK2425?term=uwp%20C++&lang-en=true
+
 # Background Materials
 
 There are a number of documents, text and video, containing materials on the subjects of MFC, Windows messages, C++11/17/20, and C++/WinRT.
